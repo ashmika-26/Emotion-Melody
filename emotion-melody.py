@@ -21,11 +21,11 @@ labelPhoto.pack()
 
 def scan():
     # load model
-    model = model_from_json(open("/fer.json", "r").read())
+    model = model_from_json(open("fer.json", "r").read())
     # load weights
-    model.load_weights('/fer.h5')
+    model.load_weights('fer.h5')
 
-    face_haar_cascade = cv2.CascadeClassifier('/haarcascade_frontalface_default.xml')
+    face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     cap = cv2.VideoCapture(0)
 
@@ -80,7 +80,7 @@ def scan():
     if predicted_emotion == "angry":
         lab=Label(root,text = "You looked angry, hope that playlist put you in a good mood!")
         lab.pack()
-        file = '/Users/ashmika/Desktop/face-detection/songs/neutral/'
+        file = '/Users/ashmika/Desktop/face-detection/songs/angry/'
         subprocess.call([mp, file])
 
     if predicted_emotion == "neutral":
