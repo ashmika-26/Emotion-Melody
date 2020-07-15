@@ -5,6 +5,7 @@ It opens an opencv window that uses webcam and lets the users scan their faces a
 Program is trained for 50 epochs and runs at 60% accuracy. (You can change the number of epochs in emotion-detection.py)
 
 ![Screenshot](happy_sc.png)
+![Screenshot](sad_sc.png)
 
 # Dependencies:
     pip install numpy
