@@ -4,6 +4,8 @@ This real-time Emotion detecting Music Player is an application made using vario
 It opens an opencv window that uses webcam and lets the users scan their faces and hit enter, upon which any local music player will open with a playlist created   based on the emotion it detected. 
 Program is trained for 50 epochs and runs at 60% accuracy. (You can change the number of epochs in emotion-detection.py)
 
+![Screenshot](happy_sc.png)
+
 # Dependencies:
     pip install numpy
     pip install pandas
